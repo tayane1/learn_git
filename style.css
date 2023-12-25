@@ -1,0 +1,284 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+ }
+
+ .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: #fada15;
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+ /*barre de navigation debut*/
+
+ .navbar {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:1rem;
+   flex-flow: column;
+   background-color: yellow;
+     height: 80px;
+     width: 100%;
+     border-bottom-right-radius: 20px;
+     border-bottom-left-radius: 20px;
+     position: fixed;
+     z-index: 2;
+ }
+
+.navbar li {
+    display: inline;
+    color: black;
+    padding: 20px;
+    
+}
+
+.navbar li:hover{
+    color: white;
+    background-color: black;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color:var(--black);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+/*barre de navigation fin */
+
+/* a propos debut */
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,auto));
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    padding: 5rem;
+    
+}
+
+.about img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+/* a propos fin */
+
+/* travail debut */
+
+.post {
+    background: ghostwhite;
+    box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: 0.5rem;
+    margin: 5px;
+}
+
+.post-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+   
+}
+
+.post-video{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+   
+}
+
+.post-audio{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.description{
+    font-size: .8rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+}
+
+/* travail fin */
+
+/* CV debut */
+
+.table {
+    margin-top: 2rem;
+    border: 1px solid black;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.table tr {
+    background-color: midnightblue;
+    color: #fff;
+    text-align: left;
+ }
+
+.table th{
+    text-align: center;
+    color: #fff;
+}
+
+ .table tr, td {
+    padding: 15px 20px;
+ }
+
+.table tr, td, th {
+    border: 1px solid #ddd;
+    color: #fff;
+ }
+
+.table tr:nth-child(even){
+    background-color: yellow;
+ }
+
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.row form{
+    padding: 2rem;
+    border:1px solid rgba(0,0,0,.1);
+    flex: 1 1 40rem;
+}
+
+.row form h3{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: black;
+}
+
+.inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inputbox input{
+    width: 49%;
+}
+
+.inputbox .box1, textarea{
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    border:1px solid rgba(0,0,0,.1);
+    color: black;
+    text-transform: none;
+    margin: .7rem 0;
+}
+
+.row form textarea{
+    width: 100%;
+    height: 15rem;
+    resize: none;
+}
+
+ /* CV fin */
+
+ /* footer debut */
+
+ .footer{
+    background: #632b84;
+}
+
+.box-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(grid, 1fr));
+    padding: 2rem, 9%;
+    gap: 25rem;
+
+}
+
+.box-container .box1 h3{
+    font-size: 2rem;
+    color: #fada15;
+    padding: 1rem 0;
+}
+
+.box-container .box1 p{
+    font-size: 1rem;
+    color: #fff;
+    padding-bottom: .5rem;
+}
+
+.box-container .box1 a{
+    font-size: 1rem;
+    color: #fff;
+    padding-bottom: 1rem 0;
+    display: block;
+}
+
+.box-container .box1 a:hover{
+    color: #fff;
+}
+
+
+
+.box-container .box1 form input[type="email"]{
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: black;
+    margin: 1rem 0;
+    text-transform: none;
+}
+
+.fab{
+    padding-right: .5rem;
+    color: #fada15;
+}
+
+.fab:hover:hover{
+    padding-right: 2rem;
+}
+
+.credit{
+    text-align: center;
+    background: #fada15;
+    color: #fff;
+    font-size: 2rem;
+}
+ /* footer fin */
